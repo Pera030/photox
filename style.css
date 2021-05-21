@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,800,900&display=swap');
+:root {
+    --orange: #e24e2a;
+    --brown: #383838; /* rgb(56, 56, 56) */
+    --green: #538d6a;
+    --gray: #ececec;
+    --text: #555555;
+    --white: #fff;
+    --transition: .3s ease-in-out;
+}
+
+/***************
+Basic styles
+***************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.cf::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/***************
+Navigation
+***************/
+nav {
+    padding: 20px 30px;
+}
+
+nav .logo {
+    float: left;
+}
+
+nav .logo a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 900;
+    font-size: 2rem;
+    display: inline-block;
+    border-right: 1px solid var(--gray);
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--text);
+    display: inline-block;
+    background-color: var(--gray);
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    transition: var(--transition);
+}
+
+/***************
+Header
+***************/
+header {
+    background-image:linear-gradient(rgba(56,56,56,.8),rgba(56,56,56,.8)),url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+/***************
+About
+***************/
+.about {
+    background-color: var(--orange);
+    text-align: center;
+    padding: 40px 100px;
+    color: var(--white);
+}
+
+/***************
+Services
+***************/
+.services {
+    padding: 70px 40px;
+    background-color: var(--brown);
+    color: var(--white);
+}
+
+.services article {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.services article i {
+    font-size: 2rem;
+    padding: 30px;
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.services article h3 {
+    font-size: 1.5rem;
+}
+
+.services article hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background-color: var(--white);
+    margin: 30px 0;
+}
+
+.services article p {
+    color: var(--gray);
+}
+
+/***************
+Contact
+***************/
+.contact {
+    background-color: var(--gray);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color: var(--brown);
+}
+
+.contact p {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    padding: 30px 0;
+}
+
+.contact button {
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: var(--green);
+    padding: 20px 40px;
+    border: none;
+    letter-spacing: 2px;
+}
+
+/***************
+Gallery
+***************/
+.gallery {
+    text-align: center;
+    padding: 50px 30px;
+    color: var(--white);
+    background-color: var(--brown);
+}
+
+.gallery h2 {
+    font-size: 2.2rem;
+}
+
+.gallery .row .col {
+    float: left;
+    width: 25%;
+    padding: 30px;
+}
+
+.gallery .row .col img {
+    width: 100%;
+    height: auto;
+}
+
+/***************
+Footer
+***************/
+footer {
+    background-color: var(--green);
+    color: var(--white);
+    text-align: center;
+    padding: 50px 0;
+}
+
+footer p {
+    font-size: 1.1rem;
+}
+
+/***************
+Responsive
+***************/
+@media(max-width:768px) {
+    nav {
+        text-align: center;
+    }
+    nav .logo {
+        float: none;
+        margin-bottom: 10px;
+    }
+    
+    nav ul li {
+        margin-bottom: 10px;
+    }
+    
+    header {
+        height: 60vh;
+    }
+
+    .services article {
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .contact {
+        padding: 50px 20px;
+    }
+    
+    .gallery .row .col {
+        width: 100%;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
